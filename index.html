@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio design</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #typewriter {
+            font-family: 'Arial', sans-serif; /* Change the font style */
+            position: relative;
+        }
+        
+        #typewriter::after {
+            content: '|'; /* Add the caret */
+            position: absolute;
+            top: 0;
+            right: -8px;
+            animation: caret 0.7s infinite; /* Add blinking animation */
+        }
+
+        @keyframes caret {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo">My Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">work</a>
+                <a href="#experince">experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- home design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3><span id="typewriter"></span></h3>
+            <h1>DESHNA JAIN</h1>
+            <h3>i <span>Design and Develop</span> meaningful experiences.</h3>
+           
+            <div class="social-media">
+                <a href="https://github.com/deshhnajain"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/deshna-jain-6b1336292/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-dev-to' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <a href="resume.pdf" class="btn">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-img">
+                <img src="myfotofest.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About<span>Me</span></h2>
+                
+                <p>I am currently pursuing a Bachelor of Computer Application degree at JIMS. I have a great interest in the field of business and now I am actively studying in IT field.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- work section -->
+    <section class="work" id="work">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="work-container">
+            <!-- First project box -->
+            <div class="work-box">
+                <div class="project-image">
+                    <!-- Upload photo of the project here -->
+                    <img src="homephoto.jpg" alt="Project 1">
+                </div>
+                <div class="project-description">
+                    <h3>Jal Nidhi</h3>
+                    <p>Developed a React Native Android application integrated with Google Firebase.
+                        Finalist in the Smart India Hackathon.
+                        Facilitates citizen reporting of water-related issues via social media data.
+                        Utilizes APIs for data collection and analysis.
+                        Forwards data to the government for prompt action.
+                        Provides real-time alerts to citizens regarding water-related problems.</p>
+                    <a href="https://github.com/deshhnajain/Jal-Nidhi" target="_blank" class="btn-github">GitHub</a>
+                </div>
+            </div>
+            <!-- Second project box -->
+            <div class="work-box">
+                <div class="project-description">
+                    <h3>Project XYZ</h3>
+                    <p>project developed using React Native and Google Firebase.
+                        Designed as an e-commerce application specializing in the sale and purchase of plants.
+                        Aims to bridge the gap between nurseries and customers by facilitating the sale of plants directly from nearby nurseries.
+                        Customers can browse through a variety of plants available from nearby nurseries and make purchases through the app</p>
+                    <a href="https://github.com/deshhnajain/GO_Green" target="_blank" class="btn-github">GitHub</a>
+                </div>
+                <div class="project-image">
+                    <!-- Upload photo of the project here -->
+                    <img src="gogreen.jpg" alt="Project 2">
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="designs" id="designs">
+    <h2 class="heading">My <span>Designs</span></h2>
+    <h3 class="subheading">Basic Promotional Video Editings:</h3>
+    <div class="video-container">
+        <div class="video-box">
+            <!-- Add your video here -->
+            <video controls>
+                <source src="aroma1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-box">
+            <!-- Add your video here -->
+            <video controls>
+                <source src="aroma2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-box">
+            <!-- Add your video here -->
+            <video controls>
+                <source src="aroma3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+    </div>
+</section>
+<!-- Social Media NSS Posts section -->
+<section class="social-media-posts" id="social-media-posts">
+    <h3 class="subheading">Social Media NSS Posts:</h3>
+    <div class="photo-container">
+        <div class="photo-box">
+            <!-- Add your square photo here -->
+            <img src="br.png" alt="Photo 1">
+        </div>
+        <div class="photo-box">
+            <!-- Add your square photo here -->
+            <img src="christ.png" alt="Photo 2">
+        </div>
+        <div class="photo-box">
+            <!-- Add your square photo here -->
+            <img src="news.png" alt="Photo 3">
+        </div>
+        <div class="photo-box">
+            <!-- Add your square photo here -->
+            <img src="scinceinsta.png" alt="Photo 5">
+        </div>
+        <div class="photo-box">
+            <!-- Add your square photo here -->
+            <img src="2.png" alt="Photo 5">
+        </div>
+        
+    </div>
+</section>
+<section class="prototype-designs" id="prototype-designs">
+    <h3 class="subheading">Prototype Designs:</h3>
+    <div class="prototype-box">
+        <h2 class="prototype-heading">Jal Nidhi Prototype</h2>
+        <a href="1.pdf" download class="btn-pdf">Download PDF</a>
+    </div>
+</section>
+
+
+
+
+    <script>
+        const typewriter = document.getElementById('typewriter');
+        const messages = ["Hello my name is", "Greetings I am"];
+        let index = 0;
+        let forward = true;
+        let currentMessage = messages[index];
+        let i = 0;
+
+        function type() {
+            typewriter.textContent = currentMessage.slice(0, i);
+            if (forward) {
+                if (i < currentMessage.length) {
+                    i++;
+                } else {
+                    forward = false;
+                }
+            } else {
+                if (i > 0) {
+                    i--;
+                } else {
+                    forward = true;
+                    index = (index + 1) % messages.length;
+                    currentMessage = messages[index];
+                }
+            }
+            setTimeout(type, 100);
+        }
+
+        document.addEventListener('DOMContentLoaded', type);
+    </script>
+</body>
+</html>
